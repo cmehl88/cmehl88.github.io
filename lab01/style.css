@@ -23,7 +23,7 @@ h1 {
 #navigation {
     display: flex;
     justify-content: center;
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
     border-top: yellowgreen solid 3px;
     border-bottom: lightblue solid 3px;
     background-color: #345e29;
