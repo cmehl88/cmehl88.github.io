@@ -25,7 +25,7 @@ h1 {
     justify-content: center;
     border-top: yellowgreen solid 3px;
     border-bottom: lightblue solid 3px;
-    background-color: #345e29;
+    background-color: #345e29;              /*!!! This custom background is from magicpattern.design website !!!*/
     background: linear-gradient(135deg, #2d682455 25%, transparent 25%) -15px 0/ 30px 30px, linear-gradient(225deg, #2d6824 25%, transparent 25%) -15px 0/ 30px 30px, linear-gradient(315deg, #2d682455 25%, transparent 25%) 0px 0/ 30px 30px, linear-gradient(45deg, #2d6824 25%, #ffffff 25%) 0px 0/ 30px 30px;
 }
 
