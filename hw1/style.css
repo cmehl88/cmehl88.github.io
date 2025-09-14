@@ -94,6 +94,8 @@ figure {
 figure img {
   border: 4px solid #083844;                          /* outline the image color + thickness */
   border-radius: 12px;                                  /* how much corners are rounded */
+  max-width: 400px;
+  height: auto;
 }
 
 #Paragraph {
