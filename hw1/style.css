@@ -108,3 +108,13 @@ figure img {
     border-radius: 2rem;                                /* Rounds the corners of the box (2rem = large rounded corners) */
 }
 
+.ad-box {
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+  text-align: center;
+  background: #fff8dc;
+  border: 2px dashed #083844;
+  font-weight: bold;
+  max-width: 400px;
+}
+
