@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="style.css">
+    <title>Transport Page</title>
+</head>
+<body>
+    
+    <!-- Main Page -->
+    <hr id="firstLine">
+    <header>
+        <h1> <span class="h1box"><span class="heading1"> The </span> <span class="heading2"> OSI </span> <span class="heading1"> Model </span></span></h1>
+    </header>
+    <hr id="firstLine">
+
+    <!-- Navigation -->
+    <nav>
+       <a href="index.html">Home</a> 
+       <a href="networkAccess.html">Network Access Layer</a>
+       <a href="internet.html">Internet Layer</a>
+       <a href="transport.html">Transport Layer </a>
+       <a href="application.html">Application Layer</a>
+    </nav>
+    <hr id="firstLine">
+
+        <!-- Welcome header -->
+    <h2> Transport Layer </h2>
+
+    <!-- Content, Image and Paragraph -->
+    <div class="content">   
+        <figure>
+            <img src="images/layer4img.png" alt="Network Access img">
+            <figcaption> @pynetlabs.com</figcaption>
+        </figure>
+        <figure>
+            <p id="Paragraph">
+            Layer four of the OSI model is the transport layer. It receives data from the Session Layer 
+            and breaks it into segments for transmission. This layer is responsible for managing flow control, 
+            ensuring that data is sent at an optimal rate between devices, and for error control by detecting 
+            issues and requesting retransmissions when packets are missing or corrupted. If the connection slows 
+            or errors occur, the transport layer adapts by adjusting the transmission speed or resending data when needed depending
+            on the circumstance like when congestion occurs.
+            </p>
+        </figure>
+    </div>
+
+</body>
+</html>
