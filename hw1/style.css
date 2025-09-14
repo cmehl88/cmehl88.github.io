@@ -28,7 +28,7 @@ h1 {
     letter-spacing: 2px;
 }
 
-#firstLine {
+.firstLine {
    height: 4px;                                         /* Thickness of the <hr> line */
    background-color: black;                           /* Line color */
    border: none;                                        /* Removes the browser’s default border style */
