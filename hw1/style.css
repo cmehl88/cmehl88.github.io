@@ -5,6 +5,7 @@
 h1 {
    text-align: center;
    font-size: 3em;
+   /* Background design from superdesigner.com */
    background: radial-gradient(#255a86 15%, transparent 16%, transparent 49%, #255a86 50%, transparent 51%),radial-gradient(circle at top left, #255a86 10%, transparent 10%, transparent 39%, #255a86 40%, transparent 41%),radial-gradient(circle at top right, #255a86 10%, transparent 10%, transparent 39%, #255a86 40%, transparent 41%),radial-gradient(circle at bottom left, #255a86 10%, transparent 10%, transparent 39%, #255a86 40%, transparent 41%),radial-gradient(circle at bottom right, #255a86 10%, transparent 10%, transparent 39%, #255a86 40%, transparent 41%);
    background-size: 3em 3em;                            /* size of background */
    background-color: #549bff;                         /* color of background */
