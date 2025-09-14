@@ -25,6 +25,7 @@ h1 {
 
 .heading2 {
     color: lightseagreen;                             /* Text color for elements */
+    letter-spacing: 2px;
 }
 
 #firstLine {
@@ -112,7 +113,7 @@ figure img {
   margin: 2rem auto;
   padding: 1rem 2rem;
   text-align: center;
-  background: #fff8dc;
+  background:rgb(19, 181, 172);
   border: 2px dashed #083844;
   font-weight: bold;
   max-width: 400px;
