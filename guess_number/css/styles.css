@@ -1,0 +1,60 @@
+/* general padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%; 
+    font-family: "Arial";
+}
+
+body {
+    height: 100%;
+    background-image: url("../img/bg.webp");
+    background-size: cover;        /* fill the screen */
+    background-repeat: no-repeat;  /* for no weird looking tiling */
+    background-position: center;   /* keep centered to the middle of screen*/
+    text-align: center;            /* Put everything to the center */
+}
+
+#guessBtn {
+    background-color: #3f9f42;
+    color: white;
+}
+
+#guessBtn:hover {
+    background-color: #4db852;
+    transform: scale(1.05);
+}
+
+#resetBtn {
+    background-color: #bb1f14;
+    color: white;
+    display: none;
+}
+
+#resetBtn:hover {
+    background-color: #d13939;
+    transform: scale(1.00);
+}
+
+#AttsLeft {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+#guesses {
+    font-size: 1rem;
+    color: #555;
+}
+
+#Wins, #Loses {
+    font-size: 1.1rem;
+    margin-top: 8px;
+    color: #222;
+}
