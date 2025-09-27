@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.cdnfonts.com/css/chomsky" rel="stylesheet">
+</head>
+
+<header> <!-- Diamond gif from giphy.com-->
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWFpNHNhY3FoajBwcHM4eWFwYjRsN3dkNzVjdGt3cHdhY2Nhb21ydiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/1qgdfBl0FRZ4dM7YzU/giphy.webp"
+        alt="spinning diamond" class="diamond">
+
+    <h1 id="title">Colossal Diamonds</h1>
+
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWFpNHNhY3FoajBwcHM4eWFwYjRsN3dkNzVjdGt3cHdhY2Nhb21ydiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/1qgdfBl0FRZ4dM7YzU/giphy.webp"
+        alt="spinning diamond" class="diamond">
+</header>
+<div id="winBanner"></div> <!-- the spot for win or loss-->
+<body>
+
+    <div id="slot-container"> <!-- the slot machine spot -->
+        <div id="slot-machine">
+            <div id="reel1">🍒</div>
+            <div id="reel2">🍋</div>
+            <div id="reel3">💎</div>
+        </div>
+        <div class="controls">
+            <button id="spinBtn">Spin!</button>
+        </div>
+    </div>
+
+    <div id="errorBox"> <!-- the spot for errors to go -->
+        <span id="anyErrors"></span>
+    </div>
+
+    <div id="inputSection"> <!-- the input section -->
+        <div class="inputFields">
+            Input Money:
+            <input type="text" id="moneyInput">
+        </div>
+        <div class="inputFields">
+            Input Spin Amount:
+            <input type="text" id="spinInput">
+        </div>
+        <div class="inputFields">
+            Your Money: <span id="theMoney"></span>
+        </div>
+        <button id="resetBtn">Reset All</button> <!-- Reset button -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

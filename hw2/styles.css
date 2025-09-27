@@ -1,0 +1,175 @@
+/* === Header Section === */
+header {
+    display: flex;                  /* Need header to be flex so the diamonds are next to title */
+    justify-content: center;        
+    align-items: center;            
+    gap: 50px;                      /* space between title and diamonds */
+    padding: 30px 0;
+    width: 70%;
+    border-radius: 80px;
+
+    /* BACKGROUND CSS DESIGN SECTION FROM css-pattern.com !I did not code this section! */
+    --s: 21px;
+    --c1: #3d3e38;
+    --c2: #01fafe;
+    --c3: #000000;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g1: var(--_s) conic-gradient(at calc(500%/6) 50%, var(--c3) 25%, #0000 0);
+    --_g2: var(--_s) conic-gradient(at calc(200%/3) 50%, var(--c2) 25%, #0000 0);
+    background:
+        var(--s) var(--s)/var(--_g1), 0 0/var(--_g1),
+        var(--s) var(--s)/var(--_g2), 0 0/var(--_g2),
+        repeating-conic-gradient(var(--c1) 0 25%, #0000 0 50%) 0 0/var(--_s),
+        linear-gradient(var(--c1) calc(100%/3), var(--c2) 0 calc(200%/3), var(--c3) 0) 0 0/var(--s) var(--s);
+}
+
+.diamond {
+  width: 150px;   /* diamond size */
+  height: auto;
+}
+
+#title {
+    font-size: 5rem;
+    font-family: 'Chomsky', serif;
+    color: #46eafc;
+    margin: 0;
+    text-shadow: 2px 2px 20px #000,  /* black shadow */
+                 0 0 15px #000000;   /* glowing effect */
+}
+
+/* === General page layout === */
+body {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+
+      /* Background GIF */
+    background: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDNlNmdiOXZjc2JneTN2aGtndW1obHU4NnpmNm03aGphdW5ja3lraiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ce18KspdcaxaKuZ1HC/giphy.gif") no-repeat center center fixed;
+    background-size: cover; /* makes it stretch to fill screen */
+}
+
+/* Slot container box */
+#slot-container {
+  background: rgba(0, 0, 0, 0.9); /* semi-transparent dark bg */
+  padding: 50px;
+  margin-top: 80px;
+  border-radius: 30px;  /* rounded corners */
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.9); /* glowy shadow */
+  text-align: center;
+}
+
+/* Reels inside container */
+#slot-machine {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+/* Buttons inside container */
+.controls button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  margin: 5px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.controls button:hover {
+  transform: scale(1.1);
+  background-color: #0044cc;
+  color: #fff;
+}
+
+#inputSection {
+  background: rgba(0, 0, 0, 0.9); /* semi-transparent dark bg */
+  padding: 50px;
+  border-radius: 30px;  /* rounded corners */
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.9); /* glowy shadow */
+  text-align: center;
+}
+
+/* Input section text styling */
+#inputSection {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 50px;
+  border-radius: 0 0 30px 30px;  /* if stacked with slot box */
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  color: #aeeaff; /* ice blue text */
+  font-size: 1.2rem;
+}
+
+#inputSection input {
+  background-color: #222;         /* dark grey background */
+  border: 2px solid #46eafc;      /* ice blue border */
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  color: #46eafc;                 /* ice blue text */
+  outline: none;                  /* remove default focus ring */
+  margin-left: 0px;
+}
+
+.inputFields {
+  margin: 10px 0;
+  font-weight: bold;
+  color: #aeeaff; /* ice blue labels */
+}
+
+#totalAmount span {
+  color: #fff; /* your balance shows in white for contrast */
+  font-weight: bold;
+}
+
+#resetBtn, #spinBtn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  border: 2px solid #46eafc;   /* ice blue border */
+  border-radius: 12px;
+  background-color: #222;      /* dark grey background */
+  color: #46eafc;              /* ice blue text */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#spinBtn:hover {
+  background-color: #333;      /* slightly lighter grey */
+  color: #aeeaff;              /* brighter ice blue */
+  box-shadow: 0 0 12px #46eafc; /* glowing effect */
+  transform: scale(1.05);         /* makes the button slower get bigger */
+}
+
+/* Hover effect */
+#resetBtn:hover {
+  background-color: #333;      /* slightly lighter grey */
+  color: #aeeaff;              /* brighter ice blue */
+  box-shadow: 0 0 12px #46eafc; /* glowing effect */
+  transform: scale(1.05);
+}
+
+#winBanner {
+  display: none;               
+  position: absolute;           /* take it out of normal flow */
+  top: 180px;                   /* adjust so it's between title and slot */
+  left: 50%;                    /* center horizontally */
+  transform: translateX(-50%);  /* center correction */
+  font-size: 4rem;
+  font-weight: bold;
+  color: #46eafc;
+  text-align: center;
+  text-shadow: 0 0 20px #00faff, 0 0 40px #00faff;
+  z-index: 1000;                /* keep it above other elements */
+}
+
+#winBanner img {
+  width: 80px;
+  vertical-align: middle;
+}
