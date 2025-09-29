@@ -2,56 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 3 js Quiz</title>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Lab 3: Steph Curry Quiz</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+<!-- All Gifs are from Giphy.com -->
 <body>
+    <header>
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGVtZzA3bDA0OWFtYW9jMzl2bGY2NDFzdGZrcjh2ZmVzdjJqNzVndiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GGjE4LAJ2uzGiwdk55/giphy.gif"
+        alt="balling" class="ball">
 
-    <h1>  CSS Quiz  </h1>
+    <h1>Steph Curry Quiz</h1>
 
-    1. What CSS property changes the text color? <br>
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGVtZzA3bDA0OWFtYW9jMzl2bGY2NDFzdGZrcjh2ZmVzdjJqNzVndiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/GGjE4LAJ2uzGiwdk55/giphy.gif"
+        alt="balling" class="ball">
+    </header>
+    
+    <div class="container">
+    <p id="q1"> What is Steph Curry's Real First Name? <span id="image1"></span></p>
+    <label>Name: <input id="q1Text" type="text" placeholder="Name"></label><br><br>
 
-    <label> 
-        <input type="radio" name="q1" value="Text-Color"> Text-Color
-    </label>
-    <label> 
-        <input type="radio" name="q1" value="Font-Color"> Font-Color
-    </label>
-    <label> 
-        <input type="radio" name="q1" value="Color"> Color
-    </label>
+    <p id="q2"> What team does Steph Curry play for? <span id="image2"></span></p>
+    <label><input type="radio" name="q1" value="Cavaliers">Cleveland Cavaliers</label>
+    <label><input type="radio" name="q1" value="Hornets">Charlotte Hornets</label>
+    <label><input type="radio" name="q1" value="Timberwolves">Minnesota Timberwolves</label>
+    <label><input type="radio" name="q1" value="Warriors">Golden State Warriors</label><br><br>
 
-    <br>
+    <p id="q3"> What is Steph Curry's Favorite Food? <span id="image3"></span></p>
+    <label> Favorite Food:
+        <select id="food">
+            <option>Pancakes</option>
+            <option>Popcorn</option>
+            <option>Steak</option>
+            <option>Pizza</option>
+        </select>
+    </label><br><br>
 
-    2. What programming language in web is used for scrips
+    <p id="q4"> What is the most amount of Three Pointers Steph Curry has made in a single game? <span id="image4"></span></p>
+    <label>Number of 3's: <input id="numThrees" type = "number" min="0" max="99" step="1"></label><br><br>
 
-    <br>
+    <p id="q5"> What sports does Steph Curry play? <span id="image5"></span></p>
+    <label><input type="checkbox" id="a" value="Soccer">Soccer</label>
+    <label><input type="checkbox" id="b" value="Basketball">Basketball</label>
+    <label><input type="checkbox" id="c" value="Golf">Golf</label>
+    <label><input type="checkbox" id="d" value="Tennis">Tennis</label><br><br>
+    <label><button id="submit">Submit Quiz</button></label>
 
-    <label> 
-        <input type="checkbox" id="q2a" value="CSS"> CSS
-    </label>
-    <label> 
-        <input type="checkbox" id="q2b" value="JS"> JS
-    </label>
-    <label> 
-        <input type="checkbox" id="q2c" value="HTML"> HTML
-    </label>
+    <h2 hidden></h2>
+    <p id="attempts"></p>
 
-    <br>
-
-    <div>
-        3. What CSS proporty changes the text color?
     </div>
-
-    <div id="q3Options"> </div>
-
-
-
-
-    <button id="quizBtn">
-        Submit Quiz
-    </button>
-
+    <div id="theGifs">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2NxZjJjZmwzNzMxNzVzd2RvbnczejV4YTk5b20yeDF5MzhiY3lxYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HRC3FlKFIj2WAIMDR3/giphy.gif"
+        alt="steph1" class="gif">
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWlvbXNybzR4OTN5MXY5MGZkbXEzOXRrbm1uazNmZXh2b3BpaWExcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/z1w62zpXNEquzoLA40/giphy.gif"
+        alt="steph2" class="gif">
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHM1OWd4b2tnMmJ1cmlxMW1mMWVlYTMzMXZxbnVma3N5ZTd3eHBobyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nBEvyIl0wdAK7ZJiH0/giphy.gif"
+        alt="steph2" class="gif">
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>
