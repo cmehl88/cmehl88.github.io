@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab 4: Sign Up Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -26,15 +27,14 @@
         State: <select id="state"></select>
         
         <br>
-        Select a County: <select></select><br>
+        Select a County: <select id="county"></select><br>
 
         Desired Username: <input id="userBox" type="text"> <span id="userName"></span><br>
-        Password: <input span id="pw" type="password"> <span id="suggestedPW"></span> <br>
-        Type Password Again: <input type="password"><br> 
-        <input type="submit" value="Sign up!">
+        Password: <input id="pw" type="password"> <span id="suggestedPW"></span> <span id="error1"></span> <br>
+        Type Password Again: <input id="pw2" type="password"> <span id="error2"></span><br> 
+        <input id="form" type="submit" value="Sign up!">
+        <div id="complete"></div>
     </fieldset>
-
     <script src="js/script.js"></script>
 </body>
-
 </html>
